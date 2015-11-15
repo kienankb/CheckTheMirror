@@ -1,0 +1,13 @@
+GetSentimentIntent how am i doing
+GetSentimentIntent how i'm doing
+GetSentimentIntent how i am doing
+GetSentimentIntent how i've been lately
+GetSentimentIntent how i have been lately
+GetSentimentIntent how have i been lately
+GetSentimentIntent how i've been recently
+GetSentimentIntent how i have been recently
+GetSentimentIntent how have i been recently
+GetSentimentIntent how i've been
+GetSentimentIntent how i have been
+GetSentimentIntent how i have been doing
+GetSentimentIntent how i've been doing
