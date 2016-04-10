@@ -18,6 +18,7 @@ var APP_ID = 'INSERT YO APP ID HERE, YO'; //replace with "amzn1.echo-sdk-ams.app
 var AlexaSkill = require('./AlexaSkill');
 var Twitter = require('twitter');
 var sentimentAnalysis = require('sentiment-analysis');
+var TWEET_SAMPLE_SIZE = 40;
 
 /**
  * GetSentiment is a child of AlexaSkill.
@@ -61,7 +62,7 @@ GetSentiment.prototype.intentHandlers = {
 			access_token_key: 'INSERT TOKEN KEY HERE',
 			access_token_secret: 'INSERT TOKEN SECRET HERE'
 		});
-		client.get('statuses/user_timeline', {count:40, include_rts:false}, function(error, tweets, tweetresponse) {
+		client.get('statuses/user_timeline', {count:TWEET_SAMPLE_SIZE, include_rts:false}, function(error, tweets, tweetresponse) {
 			var generalSentiment = 0.0;
 			var numTweets = 0;
 			for (i = 0; i < tweets.length; i++) {
